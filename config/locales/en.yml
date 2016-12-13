@@ -1,24 +1,3 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   home:
     index:
@@ -51,6 +30,16 @@ en:
        load_more: "LOAD MORE"
        subscribe_btn: "SUBSCRIBE"
 
+       icon1: "ARCHITECTURE DESIGN"
+       icon2: "INTERIOR DESIGN"
+       icon3: "ADVERTISEMENT"
+       icon4: "MEDIA FACADE"
+       icon5: "DIGITAL SIGNAGE"
+       icon6: "FESTIVAL BOOTH"
+       icon7: "SIGN BOARD"
+       icon8: "FERFORMANCE STAGE"
+
+       adress: '211, 10, Baekbeom-ro, Mapo-gu, Seoul, Republic of Korea'
 ko:
   home:
     index:
@@ -83,4 +72,14 @@ ko:
        load_more: "사례 더보기"
        subscribe_btn: "구독하기"
           
+       icon1: "건축 디자인"
+       icon2: "인테리어 디자인"
+       icon3: "광고"
+       icon4: "미디어 파사드"
+       icon5: "디지털 사이니지"
+       icon6: "축제 부스"
+       icon7: "전광판"
+       icon8: "공연 무대"
+
+       adress: '서울시 마포구 백범로10 211호'
 
