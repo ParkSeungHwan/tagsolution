@@ -20,4 +20,50 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  home:
+    index:
+       main1: "TAGSolution"
+       main2: "Transprent LED Film"
+       home: "HOME"
+       about: "ABOUT"
+       team: "TEAM"
+       project: "PROJECTS"
+       product: "PRODUCTS"
+       contact: "CONTACT"
+
+       architec: "ARCHITECTURE"
+       signage: "DIGITAL SIGNAGE"
+       facade: "MEDIA FACADE"
+
+       aboutus: "ABOUT US"
+       about_content: "Our team makes transparent LED display film. Our product is Transparent, Flexible, Cheep and ^Light weight. We can change the way in displaying. For your building, we support large scale transparent sign board for advertising. For your media art, we support a blank canvas so you can play or show anything you want. Everything is possible."
+
+       ourteam: "OUR TEAM"
+       ourproject: "OUR PROJECTS"
+       ourproduct: "OUR PRODUCTS"
+       
+
+ko:
+  home:
+    index:
+       main1: "(주) 태그솔루션"
+       main2: "투명LED필름"
+       home: "홈"
+       about: "어바웃"
+       team: "팀"
+       project: "프로젝트"
+       product: "제품"
+       contact: "연락하기"
+
+       architec: "ARCHITECTURE"
+       signage: "DIGITAL SIGNAGE"
+       facade: "MEDIA FACADE"
+
+       aboutus: "ABOUT US"
+       about_content: "Our team makes transparent LED display film. Our product is Transparent, Flexible, Cheep and ^Light weight. We can change the way in displaying. For your building, we support large scale transparent sign board for advertising. For your media art, we support a blank canvas so you can play or show anything you want. Everything is possible."
+
+       ourteam: "OUR TEAM"
+       ourproject: "OUR PROJECTS"
+       ourproduct: "OUR PRODUCTS"
+       
+

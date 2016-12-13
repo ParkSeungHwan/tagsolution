@@ -27,12 +27,17 @@
 			</div>
 			<nav class="navbar-collapse collapse" id="main-nav">
 				<ul class="nav navbar-nav navbar-right nav-text-light">
-					<li class="active"><a href="#top">HOME</a></li>
-					<li><a href="#about">ABOUT</a></li>
-					<li><a href="#team">TEAM</a></li>
-					<li><a href="#projects">PROJECTS</a></li>
-					<li><a href="#services">PRODUCTS</a></li>
-					<li><a href="#contact">CONTACT</a></li>
+					<li class="active"><a href="#top"><%= t('.home') %></a></li>
+					<li><a href="#about"><%= t('.about') %></a></li>
+					<li><a href="#team"><%= t('.team') %></a></li>
+					<li><a href="#projects"><%= t('.project') %></a></li>
+					<li><a href="#services"><%= t('.product') %></a></li>
+          <li><a href="#contact"><%= t('.contact') %></a></li>
+          <% if I18n.locale == :en %>
+            <li><%= link_to "KOREAN", locale: 'ko' %></li>
+          <% else %>
+            <li><%= link_to "ENGLISH", locale: 'en' %></li>
+          <% end %>
 				</ul>
 			</nav>
 		</div>
@@ -42,9 +47,9 @@
 			<div class="main-content">
 				<div class="container content">
 					<div class="row text-center">
-						<h2>TAGSolution</h2>
+						<h2><%= t('.main1') %></h2>
 						<hr />
-						<h3>ARCHITECTURE & DESIGN</h3>
+						<h3><%= t('.main2') %></h3>
 					</div>
 					<div class="row text-center">
 						<a href="#about" class="scroll-down"></a>
