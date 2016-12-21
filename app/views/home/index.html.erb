@@ -359,7 +359,7 @@
               <div class="col-md-12 col-sm-12 col-xs-12 text-center padding-top">
                 <div class="contact-form">
                   <div class="alert"></div>
-                  <form id="contact-form" action="#" method="post">
+                  <form id="contact-form" action="home/submit" method="post">
                     <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-6">
                         <label class="sr-only" for="name">Name:</label>	
@@ -374,7 +374,7 @@
                       <div class="col-md-12 col-sm-12 col-xs-12">
                         <label class="sr-only" for="message">Message:</label>
                         <textarea id="message" name="message" placeholder="Message *" required></textarea>
-                        <button type="submit" class="btn btn-primary btn-lg" name="send">SEND</button>
+                        <button onclick="alert('Complete')" type="submit" class="btn btn-primary btn-lg" name="send">SEND</button>
                       </div>
                     </div>
                   </form>
