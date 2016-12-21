@@ -13,5 +13,6 @@ class HomeController < ApplicationController
     @msg.email = params[:email]
     @msg.content = params[:content]
     @msg.save
+    redirect_to:back
   end
 end
