@@ -333,7 +333,7 @@ textarea:focus {
 }
 
 .main-top .main-content .container.content {
-  background-image: url('../../assets/film');
+  background-image: url('../../assets/film.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: table-cell;
