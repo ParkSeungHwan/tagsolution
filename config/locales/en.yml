@@ -39,6 +39,8 @@ en:
        icon7: "SIGN BOARD"
        icon8: "FERFORMANCE STAGE"
 
+       about_footer: "We make Transparent LED display film. For modernized and Individualized city, we will keep providing better solution."
+
        adress: '211, 10, Baekbeom-ro, Mapo-gu, Seoul, Republic of Korea'
 ko:
   home:
@@ -83,3 +85,4 @@ ko:
 
        adress: '서울시 마포구 백범로10 211호'
 
+       about_footer: "우리는 투명 LED 필름을 만듭니다. 현대화, 독창적인 도시를 만들기 위해 항상 더 나은 해결책을 제공합니다."

@@ -333,6 +333,7 @@ textarea:focus {
 }
 
 .main-top .main-content .container.content {
+  background-image: url('../../assets/film');
   display: table-cell;
   vertical-align: middle;
 }
@@ -653,7 +654,7 @@ a:hover, a:focus, a:active {
 }
 
 .about .image {
-  background-image: url('http://placehold.it/1920x1080');
+  background-image: url("../../assets/about.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
