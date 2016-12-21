@@ -13,11 +13,4 @@
  *= require_tree .
  *= require_self
  */
-.main-top .main-content .container.content {
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: table-cell;
-  vertical-align: middle;
-}
-
 
