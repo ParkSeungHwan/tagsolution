@@ -333,7 +333,7 @@ textarea:focus {
 }
 
 .main-top .main-content .container.content {
-  background-image: url('../../assets/film.jpg');
+  background-image: url('/assets/film.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: table-cell;
@@ -656,7 +656,7 @@ a:hover, a:focus, a:active {
 }
 
 .about .image {
-  background-image: url("../../assets/about.jpg");
+  background-image: url("/assets/about.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
