@@ -237,7 +237,7 @@
 						</div>
 						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
               <form action="/home/subscribe" method="post">
-                <input type="email" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" name="newsletter" placeholder="Enter your email..." />
+                <input type="email" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" name="newsletter" placeholder="Enter only email with '@'..." />
                 <br />
                 <button onclick="alert('Complete')" type="submit" class="btn btn-primary btn-lg wow fadeInUp"  data-wow-duration="1s" data-wow-delay="0.5s" name="send"><%= t('.subscribe_btn') %></button>
               </form>
@@ -367,7 +367,7 @@
                       </div>
                       <div class="col-md-6 col-sm-6 col-xs-6">
                         <label class="sr-only" for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Email *" required>	
+                        <input type="email" id="email" name="email" placeholder="Only for Email with '@'" required>	
                       </div>
                     </div>
                     <div class="row text-right">
