@@ -11,7 +11,7 @@ Version: 1.0
 -----------------------
 
 1. Main Style
-2. Navigation Bar
+2. avigation Bar
 3. Main Top
 4. Buttons
 5. Links
@@ -2169,7 +2169,7 @@ img.mfp-img {
   }
 
   .navbar-collapse {
-    background-color: rgba(0,0,0,0.9);
+    background-color: white;
     padding: 0;
     position: absolute;
     width: 100%;
