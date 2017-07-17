@@ -2,12 +2,11 @@ en:
   home:
     index:
        main1: "TAGSolution"
-       main2: "Transparent LED Film"
+       main2: "Transparency is everywhere"
        home: "HOME"
-       about: "ABOUT"
-       team: "TEAM"
-       project: "PROJECTS"
-       product: "PRODUCTS"
+       about: "ABOUT US"
+       tagpanel: "TAG PANEL"
+       cosmoblanc: "COSMO BLANC"
        contact: "CONTACT"
 
        architec: "ARCHITECTURE"
@@ -17,15 +16,24 @@ en:
        aboutus: "ABOUT US"
        about_content: "Our team makes transparent LED display film. Our product is Transparent, Flexible, Cheep and Light weight. We can change the way in displaying. For your building, we support large scale transparent sign board for advertising. For your media art, we support a blank canvas so you can play or show anything you want. Everything is possible."
 
-       ourteam: "OUR TEAM"
+       ourteam: "MEMBERS"
        ourproject: "OUR PROJECTS"
        ourproduct: "OUR PRODUCTS"
-       
+
+       vision: "VISION"
+
+       abouttagpanel: "TRANSPARENT LED PANEL"
+       market: "MARKET TREND"
+       portfolio: "PORTFOLIO"
+       potential: "POTENTIAL PLACES"
+       workingmovie: "WORKING MOVIES"
+
+
        subscribe: "Subscribe To Our Newsletter"
 
        sentence_we: "TRANSPARENCY IS EVERYWHERE"
 
-       services: "SERVICES"
+       services: "CONTACT"
        services_con: "We offer a unique way for displaying. With our 4 core technologies, (Metal Mesh, LED packaging, Circuits, Compacted Manufacturing Process), we makes 4 main characteristics. Transparency, Flexibility, Low Cost, Light Weight. These 4 features make possible what you imagine. You can use our product just as a transparent monitor. You can play the video, draw something, write something, and so on. We make everything you imagine on the display possible. What you need is only an diverse imagination."
        load_more: "LOAD MORE"
        subscribe_btn: "SUBSCRIBE"
@@ -41,7 +49,7 @@ en:
 
        about_footer: "We make Transparent LED display film. For modernized and Individualized city, we will keep providing better solution."
 
-       adress: '211, 10, Baekbeom-ro, Mapo-gu, Seoul, Republic of Korea'
+       adress: '407ho, Building 36, 1 Gwanak-ro, Gwanak-gu, Seoul 151-742, Republic of Korea'
 ko:
   home:
     index:
@@ -66,9 +74,9 @@ ko:
        ourproduct: "제품"
 
        subscribe: "태그솔루션 관련 소식받기"
-         
+
        sentence_we: "투명한 곳에서 새로운 가치를 찾습니다."
-       
+
        services: "제공가치"
        services_con: "우리는 디스플레이에 있어 새로운 방법을 제시합니다. 우리의 4가지 핵심 기술 (메탈매쉬, LED실장방식, 투명회로, 공정 단순화)를 통해 크게 4가지 특징을 만들어냅니다. 투명함, 휘어짐, 저렴함, 가벼움. 이 4가지 특징은 당신이 상상하는 모든 것을 가능하게 해줄 수 있습니다. 당신은 우리의 제품을 단순히 모니터처럼 사용하면 됩니다. 영상을 실행하든, 그림을 그리든, 글을 쓰든지 말이죠. 우리는 당신이 보여주고 싶은 모든 것들을 가능하게 해드리겠습니다. 당신에게 필요한 것은 다양한 상상력 뿐입니다."
        load_more: "사례 더보기"
@@ -83,6 +91,6 @@ ko:
        icon7: "전광판"
        icon8: "공연 무대"
 
-       adress: '서울시 마포구 백범로10 211호'
+       adress: '서울시 관악구 관악로 1 서울대학교 36동 407호'
 
        about_footer: "우리는 투명 LED 필름을 만듭니다. 현대화, 독창적인 도시를 만들기 위해 항상 더 나은 해결책을 제공합니다."

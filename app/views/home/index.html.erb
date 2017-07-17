@@ -13,7 +13,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 	</head>
 	<body id="top">
-		
+
 		<!-- NAVBAR -->
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-header">
@@ -23,20 +23,21 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="/" class="navbar-title"><span class="color">TAG</span>Solution</a>
+				<a href="/" class="navbar-title">
+					<%= image_tag asset_path('logo_black.png') %>
+				</a>
 			</div>
 			<nav class="navbar-collapse collapse" id="main-nav">
 				<ul class="nav navbar-nav navbar-right nav-text-light">
 					<li class="active"><a href="#top"><%= t('.home') %></a></li>
 					<li><a href="#about"><%= t('.about') %></a></li>
-					<li><a href="#team"><%= t('.team') %></a></li>
-					<li><a href="#projects"><%= t('.project') %></a></li>
-					<li><a href="#services"><%= t('.product') %></a></li>
+					<li><a href="#tagpanel"><%= t('.tagpanel') %></a></li>
+					<li><a href="#cosmoblanc"><%= t('.cosmoblanc') %></a></li>
           <li><a href="#contact"><%= t('.contact') %></a></li>
           <% if I18n.locale == :en %>
-            <li><%= link_to "KOREAN", locale: 'ko' %></li>
+            <li><%= link_to "[KOREAN]", locale: 'ko' %></li>
           <% else %>
-            <li><%= link_to "ENGLISH", locale: 'en' %></li>
+            <li><%= link_to "[ENGLISH]", locale: 'en' %></li>
           <% end %>
 				</ul>
 			</nav>
@@ -47,9 +48,9 @@
 			<div class="main-content">
 				<div class="container content">
 					<div class="row text-center">
-						<h2><%= t('.main1') %></h2>
-						<hr />
-						<h3><%= t('.main2') %></h3>
+						<%= image_tag asset_path('logo.png'), style: "width: 30em; height: auto; margin-bottom: 1.5em;" %>
+						<hr style="background-color: white;"/>
+						<p style="color: white;"><%= t('.main2') %></p>
 					</div>
 					<div class="row text-center">
 						<a href="#about" class="scroll-down"></a>
@@ -62,7 +63,7 @@
 		<div id="main-content" class="main-content">
 
 			<!-- ABOUT -->
-			<div id="about" class="section padding-top">
+			<!-- <div id="about" class="section padding-top">
 				<div class="section-content">
 					<div class="row text-center">
 						<div class="col-md-4 col-sm-12 col-xs-12">
@@ -72,7 +73,7 @@
 									<h4><%= t('.architec') %></h4>
 									<hr />
 								</div>
-							</div>	
+							</div>
 						</div>
 						<div class="col-md-4 col-sm-12 col-xs-12">
 							<div class="box">
@@ -94,15 +95,23 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="section about padding-top">
+			</div> -->
+			<div id="about" class="section about padding-top">
 				<div class="row text-left">
 					<div class="col-md-6 col-sm-12 col-xs-12 image">
 					</div>
 					<div class="col-md-6 col-sm-12 col-xs-12 background">
-						<div class="content wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-							<h3><%= t('.aboutus') %></h3>
-							<p><%= t('.about_content') %></p>
+						<div class="content wow fadeInRight section-heading" data-wow-duration="1s" data-wow-delay="0.5s">
+							<h3 style="text-align: center;"><%= t('.aboutus') %></h3>
+							<hr />
+							<p>
+								TAG Solution은<br>
+					      "투명한 것은 어디에든 있다"는 비전 아래 지금까지 투명한 유리에 빛을 통해 다양한 컨텐츠를 표현하고, <br>
+					      이를 통해 건축물에 새로운 가치를 구현하는 일을 진행해왔습니다.<br>
+					      기존 건축물의 디자인을 해치지 않으면서 저희 제품을 통해 텍스트, 이미지, 동영상 등 많은 컨텐츠를 자유롭게 표현하는 것.<br>
+					      모든 건축물의 벽면과 유리를 살아있는 디스플레이로 만들고, 스마트 시티로까지 나아가는 일.<br>
+					      TAG Solution은 지금 이순간에도 세상을 바꿔가고 있습니다.
+							</p>
 							<a href="#team" class="btn btn-primary">EXPLORE</a>
 						</div>
 					</div>
@@ -154,116 +163,253 @@
 						</div>
 					</div>
 				</div>
-			</div>		
+			</div>
+
+			<div id="vision" class="section vision padding-top">
+				<div class="container">
+					<div class="section-heading">
+						<h2><%= t('.vision') %></h2>
+						<hr />
+					</div>
+					<p style="text-align: center;">
+						TAG Solution이 최종적으로 꿈꾸는 세상은<br>
+			      <b>"모든 건축물의 벽면과 유리가 디스플레이가 되어 다양한 컨텐츠를 표현함으로서 건축물이 살아있는듯한 세상을 만드는 것"</b>입니다.<br>
+			      이를 위해서는 기존 건축물의 디자인을 해치지 않는 투명함과, 보다 다양한 컨텐츠를 재생할 수 있는 유연함이 필요합니다.<br>
+			      TAG Solution에서는 이를 위해 끊임없는 연구개발을 통해 빛으로 세상에 가치를 부여하는 일을 진행하고 있습니다.<br>
+			      정적인 건축물에 동적인 컨텐츠를 입혀서 새로운 가치를 부여하는 일.<br>
+			      Technology, Art&Glass를 향한 TAG Solution의 목표는 이제 시작입니다.<br>
+					</p>
+					<div class="col-md-1"></div>
+					<div class="col-md-10 col-sm-12 col-xs-12 image">
+					</div>
+				</div>
+			</div>
+
+			<div id="tagpanel" class="section tagpanel padding-top">
+				<div class="container">
+					<div class="section-heading">
+						<h2><%= t('.abouttagpanel') %></h2>
+						<hr />
+					</div>
+					<p style="text-align: center;">
+						전세계적으로 건물의 트랜드가 <br>
+						투명한 유리가 증가하고 디자인요소가 가미된 건축물로 변화함에 따라, <br>
+						기존 건축물의 디자인을 해치지 않고 디지털사이니지를 구현할 수 있는 제품의 수요가 증가하였습니다.<br>
+						본 제품은 투명함, 플렉서블함, 얇고 가벼움, 유지보수와 설치용이성이라는 특징을 바탕으로<br>
+						다양한 건축물에 쉽게 부착하기만 해도<br>
+						텍스트, 이미지, 동영상 등 다양한 컨텐츠를 표현가능합니다.
+					</p>
+					<div class="col-md-1"></div>
+					<div class="col-md-10 col-sm-12 col-xs-12 image">
+					</div>
+				</div>
+			</div>
+
+			<div class="section tagpanel-market padding-top">
+				<div class="container">
+					<div class="section-heading">
+						<h2><%= t('.market') %></h2>
+						<hr />
+					</div>
+					<p style="text-align: center;">
+						건축물이 대부분 투명한 유리로 지어질 뿐만 아니라<br>
+				    사인물 역시 과거 아날로그 사인부터 기술 발전에 따른 <br>
+				    디지털사이니지 시장까지 그 규모가 계속해서<br>
+				    확대되고 있으며, 다양한 형태의 사이니지 솔루션이<br>
+				    등장하고 있다. 그중 투명한 유리에 쉽게 적용할 수 있는<br>
+				    투명LED디스플레이 패널의 시장도 점점 확대되고 있습니다.<br>
+					</p>
+					<div class="col-md-1"></div>
+					<div class="col-md-10 col-sm-12 col-xs-12 image">
+					</div>
+				</div>
+			</div>
 
 			<!-- PROJECTS -->
+			<div id="projects" class="section portfolio padding-top">
+				<div class="container">
+					<div class="section-heading">
+						<h2><%= t('.portfolio') %></h2>
+						<hr />
+					</div>
+					<div class="section-content">
+						<div class="work-item-wrapper">
+							<div class="row work-item-list">
+								<div class="col-md-4 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "portfolio1.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s", style: "height: 268px;"  %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+												<h3>CES 2017 in Las Vegas</h3>
+												<p>2017.1</p>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "portfolio2.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s" %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+												<h3>Cafe in Sinchon, Korea</h3>
+												<p>2016.4</p>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "portfolio3.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s" %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+	                      <h3>COEX in Gangnam, Korea</h3>
+												<p>2016.9</p>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+								<div class="col-md-7 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "portfolio4.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s" %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+	                      <h3>Seoul National University<br>Engineering building</h3>
+												<p>2017.3</p>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+								<div class="col-md-5 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "portfolio5.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+												<h3>Office Interior</h3>
+												<p>2017.3</p>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- POTENTIAL PLACES -->
 			<div id="projects" class="section portfolio padding-top">
-				<div class="section-heading">
-					<h2><%= t('.ourproject') %></h2>
-					<hr />
-				</div>
-				<div class="section-content">
-					<div class="work-item-wrapper">
-						<div class="row work-item-list">
-							<div class="col-md-4 col-sm-6 col-xs-12 work-item">
-                <%= image_tag "shinchon.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
-								<div class="image-overlay">
-										<div class="work-item-info">
-											<h3>Seoul, Shinchon</h3>
-											<p>2016.4</p>
-											<i class="fa fa-search-plus"></i>
-										</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12 work-item">
-                <%= image_tag "coex.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
-								<div class="image-overlay">
-										<div class="work-item-info">
-											<h3>Seoul, Coex</h3>
-											<p>2016.9</p>
-											<i class="fa fa-search-plus"></i>
-										</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12 work-item">
-                <%= image_tag "ces.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
-								<div class="image-overlay">
-										<div class="work-item-info">
-                      <h3>Las Vegas, CES <br><br />  ( Coming Soon )</h3>
-											<p>2017.1</p>
-											<i class="fa fa-search-plus"></i>
-										</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12 work-item">
-                <%= image_tag "snu.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
-								<div class="image-overlay">
-										<div class="work-item-info">
-                      <h3>Seoul National Univ<br> <br> ( Coming Soon )</h3>
-											<p>2017.</p>
-											<i class="fa fa-search-plus"></i>
-										</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12 work-item">
-                <%= image_tag "media.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
-								<div class="image-overlay">
-										<div class="work-item-info">
-											<h3>Coming Soon</h3>
-											<p></p>
-											<i class="fa fa-search-plus"></i>
-										</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12 work-item">
-                <%= image_tag "color.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
-								<div class="image-overlay">
-										<div class="work-item-info">
-											<h3>Coming Soon</h3>
-											<p></p>
-											<i class="fa fa-search-plus"></i>
-										</div>
-								</div>
-							</div>
-              <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/pQP-Js6sMro" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <iframe width="100%" height="315" src="https://www.youtube.com/embed/b6pst4CZ9_M" frameborder="0" allowfullscreen></iframe>
-                </div>
-              </div>
-						</div>
+				<div class="container">
+					<div class="section-heading">
+						<h2><%= t('.potential') %></h2>
+						<hr />
 					</div>
-				</div>
-			</div>
-			<div id="purchase" class="section">
-				<div class="section-content">
-					<div class="container partner-table">
-						<div class="col-md-12 col-sm-12 col-xs-12 text-center partner">
-							<button class="btn btn-primary btn-lg"><%= t('.load_more') %></button>
+					<div class="section-content">
+						<div class="work-item-wrapper">
+							<div class="row work-item-list">
+								<div class="col-md-5 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "poten1.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+												<h3>Transportation Station</h3>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "poten2.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s" %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+												<h3>Building Interior</h3>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "poten3.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s" %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+	                      <h3>Shop</h3>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "poten4.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s" %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+	                      <h3>Media Facade</h3>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 work-item">
+	                <%= image_tag "poten5.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+												<h3>Office Interior</h3>
+												<p>2017.3</p>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 work-item">
+									<%= image_tag "poten6.jpg" ,class: "wow fadeIn", "data-wow-duration"=>"1s", "data-wow-delay"=>"0.5s"  %>
+									<div class="image-overlay">
+											<div class="work-item-info">
+												<h3>Building Exterior</h3>
+												<i class="fa fa-search-plus"></i>
+											</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- NEWSLETTER -->
-			<div class="section newsletter">
-				<div class="section-content">
-					<div class="container">
-						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-							<h3 class="wow fadeInDown" data-wow-duration="1s"><%= t('.subscribe') %></h3>
-						</div>
-						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-              <form action="/home/subscribe" method="post">
-                <input type="email" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" name="newsletter" placeholder="Enter only email with '@'..." />
-                <br />
-                <button onclick="alert('Complete')" type="submit" class="btn btn-primary btn-lg wow fadeInUp"  data-wow-duration="1s" data-wow-delay="0.5s" name="send"><%= t('.subscribe_btn') %></button>
-              </form>
+
+			<!-- WORKING MOVIES -->
+			<div id="workingmovie" class="section portfolio padding-top">
+				<div class="container">
+					<div class="section-heading">
+						<h2><%= t('.workingmovie') %></h2>
+						<hr />
+					</div>
+					<div class="section-content">
+						<div class="work-item-wrapper">
+							<div class="row work-item-list">
+								<div class="col-md-6 col-sm-6 col-xs-12 work-item">
+									<iframe width="98%" height="315" src="https://www.youtube.com/embed/A7HxMyLLJCI" frameborder="0" allowfullscreen></iframe>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-12 work-item">
+									<iframe width="98%" height="315" src="https://www.youtube.com/embed/_PcVF-oFgkI" frameborder="0" allowfullscreen></iframe>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-12 work-item">
+									<iframe width="98%" height="315" src="https://www.youtube.com/embed/-pscp0R4VyA" frameborder="0" allowfullscreen></iframe>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-12 work-item">
+									<iframe width="98%" height="315" src="https://www.youtube.com/embed/LS5qAn5Ue98" frameborder="0" allowfullscreen></iframe>
+								</div>
+								<div class="col-md-12 col-sm-6 col-xs-12 work-item">
+									<iframe width="98%" height="450" src="https://www.youtube.com/embed/iwc_UOR8cTg" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div id="cosmoblanc" class="section cosmoblanc padding-top">
+				<div class="container">
+					<div class="section-heading">
+						<h2><%= t('.cosmoblanc') %></h2>
+						<hr />
+					</div>
+					<p style="text-align: center;">
+						COMING SOON.
+					</p>
+					<div class="col-md-1"></div>
+					<div class="col-md-10 col-sm-12 col-xs-12 image">
+					</div>
+				</div>
+			</div>
+
 
 			<div class="section dark">
 				<div class="section-content text-center">
@@ -321,8 +467,27 @@
         </div>
       </div>
 
+			<!-- NEWSLETTER -->
+			<div class="section newsletter">
+				<div class="section-content">
+					<div class="container">
+						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+							<h3 class="wow fadeInDown" data-wow-duration="1s"><%= t('.subscribe') %></h3>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+              <form action="/home/subscribe" method="post">
+                <input type="email" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" name="newsletter" placeholder="Enter only email with '@'..." />
+                <br />
+                <button onclick="alert('Complete')" type="submit" class="btn btn-primary btn-lg wow fadeInUp"  data-wow-duration="1s" data-wow-delay="0.5s" name="send"><%= t('.subscribe_btn') %></button>
+              </form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
       <!-- TESTIMONIALS -->
-      <div id="testimonials" class="section testimonials parallax-container" data-parallax="scroll" data-image-src="http://placehold.it/1200x1200" data-natural-width="1200" data-natural-height="1200">
+      <!-- <div id="testimonials" class="section testimonials parallax-container" data-parallax="scroll" data-image-src="http://placehold.it/1200x1200" data-natural-width="1200" data-natural-height="1200">
         <div class="section-heading">
           <h2>Quotes</h2>
           <hr />
@@ -345,7 +510,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- CONTACT -->
       <div id="contact" class="section contact padding-top padding-bottom">
@@ -371,7 +536,7 @@
                   <div class="col-md-4 col-sm-4 col-xs-12">
                     <i class="icon ion-ios-email"></i>
                     <h4>EMAIL</h4>
-                    <p><a href="mailto:rr5ys5s@gmail.com">rr5ys5s@gmail.com</a></p>
+                    <p><a href="mailto:rr5ys5s@gmail.com">ceo@tagsolution.kr</a></p>
                   </div>
                 </div>
               </div>
@@ -381,12 +546,12 @@
                   <form id="contact-form" action="home/submit" method="post">
                     <div class="row">
                       <div class="col-md-6 col-sm-6 col-xs-6">
-                        <label class="sr-only" for="name">Name:</label>	
+                        <label class="sr-only" for="name">Name:</label>
                         <input type="text" id="name" name="name" placeholder="Name *" required>
                       </div>
                       <div class="col-md-6 col-sm-6 col-xs-6">
                         <label class="sr-only" for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="Only for Email with '@'" required>	
+                        <input type="email" id="email" name="email" placeholder="Only for Email with '@'" required>
                       </div>
                     </div>
                     <div class="row text-right">
@@ -403,7 +568,7 @@
           </div>
         </div>
       </div>
-    </div>	
+    </div>
 
     <!-- FOOTER -->
     <footer id="footer" class="section">
