@@ -294,7 +294,7 @@ textarea:focus {
 }
 
 .navbar.navbar-light .navbar-nav.nav-text-light > li > a:hover {
-  color: black;
+  color: #d1aa88;
 }
 
 .navbar.navbar-light .navbar-nav.nav-text-light > li.active > a {

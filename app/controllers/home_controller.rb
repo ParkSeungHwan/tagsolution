@@ -13,6 +13,7 @@ class HomeController < ApplicationController
     @msg.email = params[:email]
     @msg.content = params[:message]
     @msg.save
+		ModelMailer.new_record_notification(@msg).deliver
     redirect_to:back
   end
 end

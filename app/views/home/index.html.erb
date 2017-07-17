@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<title>TAGSolution</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<meta name="description" content="Arkit - Responsive One Page Portfolio HTML Template">
+		<meta name="description" content="Transparent LED Panel">
 		<meta name="author" content="RB Web Design">
 
 
@@ -29,7 +29,7 @@
 			</div>
 			<nav class="navbar-collapse collapse" id="main-nav">
 				<ul class="nav navbar-nav navbar-right nav-text-light">
-					<li class="active"><a href="#top"><%= t('.home') %></a></li>
+					<li><a href="#top"><%= t('.home') %></a></li>
 					<li><a href="#about"><%= t('.about') %></a></li>
 					<li><a href="#tagpanel"><%= t('.tagpanel') %></a></li>
 					<li><a href="#cosmoblanc"><%= t('.cosmoblanc') %></a></li>
@@ -100,7 +100,7 @@
 				<div class="row text-left">
 					<div class="col-md-6 col-sm-12 col-xs-12 image">
 					</div>
-					<div class="col-md-6 col-sm-12 col-xs-12 background">
+					<div class="col-md-6 col-sm-12 col-xs-12 background" style="border: 0px;">
 						<div class="content wow fadeInRight section-heading" data-wow-duration="1s" data-wow-delay="0.5s">
 							<h3 style="text-align: center;"><%= t('.aboutus') %></h3>
 							<hr />
@@ -414,11 +414,12 @@
 			<div class="section dark">
 				<div class="section-content text-center">
 					<h2 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s"><%= t('.sentence_we') %></h2>
-					<a href="https://themeforest.net/item/arkit-responsive-one-page-html-template/18600837?ref=RBWebDesign" class="btn btn-primary wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">GET STARTED</a>
+					<a href="https://www.facebook.com/techartglass/" class="btn btn-primary wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">About TAGsolution</a>
 				</div>
 			</div>
 
       <!-- SERVICES -->
+      <!--
       <div id="services" class="section services padding-top padding-bottom">
         <div class="container">
           <div class="section-heading">
@@ -466,24 +467,26 @@
           </div>
         </div>
       </div>
-
+      --!>
 			<!-- NEWSLETTER -->
-			<div class="section newsletter">
-				<div class="section-content">
-					<div class="container">
-						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
-							<h3 class="wow fadeInDown" data-wow-duration="1s"><%= t('.subscribe') %></h3>
-						</div>
-						<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+      <!--
+      <div class="section newsletter">
+        <div class="section-content">
+          <div class="container">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+              <h3 class="wow fadeInDown" data-wow-duration="1s"><%= t('.subscribe') %></h3>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
               <form action="/home/subscribe" method="post">
                 <input type="email" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s" name="newsletter" placeholder="Enter only email with '@'..." />
                 <br />
                 <button onclick="alert('Complete')" type="submit" class="btn btn-primary btn-lg wow fadeInUp"  data-wow-duration="1s" data-wow-delay="0.5s" name="send"><%= t('.subscribe_btn') %></button>
               </form>
-						</div>
-					</div>
-				</div>
-			</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      --!>
 
 
       <!-- TESTIMONIALS -->
